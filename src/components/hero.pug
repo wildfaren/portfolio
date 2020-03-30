@@ -1,0 +1,19 @@
+section.hero
+    .container
+        .hero__about
+            .hero__photo
+                +image('content/user.jpg', 'hero__photo-img')
+            .hero__data
+                table
+                    - var data = [['Проживаю', 'Санкт-Петербург'], ['Возраст', '27'], ['Родился', '11 ноября 1992']];
+                    each row in data
+                        tr.hero__data-list
+                            td.hero__data-item #{row[0]}
+                            td.hero__data-item #{row[1]}
+        .hero__content
+            h3
+                .hero__welcome Привет, меня зовут
+                .hero__name Иван Петров
+                .hero__text.text
+                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, sequi?
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, ullam!

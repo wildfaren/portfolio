@@ -1,0 +1,16 @@
+section.feedback
+    h4.feedback__title.title Связаться со мной
+    form.feedback__form
+        label.feedback__block
+            .feedback__label-text Enter your name
+            +icon('user', 'feedback__icon')
+            input.feedback__name(type='text' name='name' placeholder='Дмитрий Ковальчук')
+        label.feedback__block
+            .feedback__label-text Enter your email
+            +icon('envelope', 'feedback__icon')
+            input.feedback__name(type='email' name='email' placeholder='your@email.com')
+        label.feedback__block
+            .feedback__label-text Enter your message
+            +icon('message', 'feedback__icon')
+            textarea.feedback__name(name='text' placeholder='Say me what your want from me')
+        button.btn(type='submit') Отправить
