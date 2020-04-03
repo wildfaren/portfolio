@@ -1,10 +1,11 @@
 section.reviews
-    h4.reviews__title.title Что обо мне говорят
-    .reviews__slider-controls
-        button.review__btn.reviews__btn-prev(type='button')
-        button.review__btn.reviews__btn-next(type='button')
-    ul.reviews__slider
-        - for (var i = 0; i < 2; i++)
-            li.reviews__item
-                .text
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, incidunt?
+    .container
+        h4.reviews__title.section-title Что обо мне говорят
+        .reviews__slider-controls
+            button.review__btn.reviews__btn-prev(type='button')
+            button.review__btn.reviews__btn-next(type='button')
+        ul.reviews__slider
+            - for (var i = 0; i < 2; i++)
+                li.reviews__item
+                    .text
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, incidunt?

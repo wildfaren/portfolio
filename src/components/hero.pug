@@ -1,19 +1,22 @@
 section.hero
+    .hero__gradient
     .container
-        .hero__about
-            .hero__photo
-                +image('content/user.jpg', 'hero__photo-img')
-            .hero__data
-                table
-                    - var data = [['Проживаю', 'Санкт-Петербург'], ['Возраст', '27'], ['Родился', '11 ноября 1992']];
-                    each row in data
-                        tr.hero__data-list
-                            td.hero__data-item #{row[0]}
-                            td.hero__data-item #{row[1]}
-        .hero__content
-            h3
-                .hero__welcome Привет, меня зовут
-                .hero__name Иван Петров
-                .hero__text.text
-                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, sequi?
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, ullam!
+        .hero__container
+            .hero__about
+                .hero__photo
+                    +image('content/user.jpg', 'hero__photo-img')
+                .hero__data
+                    table
+                        - var data = [['Проживаю:', 'Санкт-Петербург'], ['Возраст:', '27'], ['Родился:', '11 ноября 1992']];
+                        each row in data
+                            tr.hero__data-list
+                                td.hero__data-title #{row[0]}
+                                td.hero__data-desc #{row[1]}
+            .hero__content
+                h3
+                    .hero__welcome Привет, меня зовут
+                    .hero__name.section-title Иван Петров
+                    .hero__text.text
+                        p Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    .hero__cite.text
+                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!

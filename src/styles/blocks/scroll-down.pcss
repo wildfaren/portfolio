@@ -1,0 +1,28 @@
+.scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    bottom: 5%;
+    color: $white;
+    transition: color .3s;
+    z-index: 5;
+    &:hover {
+        color: $orange;
+        transition: color .3s;
+    }
+}
+
+.scroll__icon {
+    width: 40px;
+    height: 40px;
+    fill: $white;
+    transition: fill .3s;
+    &:hover {
+        fill: $orange;
+        width: 50px;
+        height: 50px;
+        transition: fill .3s;
+    }
+}

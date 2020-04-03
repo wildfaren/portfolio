@@ -1,10 +1,7 @@
-section.welcome
-    .welcome__background
-        +image('parallax/clouds.png', 'cloud-img', 'presentation')
-        +image('parallax/mountains.png', 'cloud-img', 'presentation')
-        +image('parallax/bridge.png', 'cloud-img', 'presentation')
-        +image('parallax/grass.png', 'cloud-img', 'presentation')
-    h2.welcome__title Личный сайт веб-разработчика
-    h1.welcome__name-title Иван Петров
+section.welcome.fullscreen-section
+    include header
+    .welcome__content
+        h2.welcome__title Личный сайт веб разработчика
+        h1.welcome__name-title Иван Петров
     a.scroll Скролл
         +icon('scroll', 'scroll__icon')

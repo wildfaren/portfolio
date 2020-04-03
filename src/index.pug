@@ -10,10 +10,11 @@ html(lang="ru")
   body
     .wrapper
       .maincontent
-        include components/header
-        include components/welcome
-        include components/hero
-        include components/footer
+        .welcome__section
+          include components/welcome
+          include components/hero
+        include components/my-skills
         .maincontent__autumn-bg
           include components/reviews
           include components/feedback
+        include components/footer

@@ -1,4 +1,16 @@
 footer.footer
-    .footer__socials
-        include socials
-        +socials('footer')
+    .footer__copyright
+        .footer__year &#169; 2019
+        .footer__name Иван Петров
+            .footer__desc личный сайт веб-разработчика
+    .footer__content
+        include main-menu
+        .footer__block
+            p.footer__text.text Lorem ipsum dolor sit amet consectetur adipisicing.
+            .footer__socials
+                include socials
+                +socials('footer')
+        .footer__block
+            blockquote.footer__blockquote
+                p.footer__blockquote-text.text Lorem ipsum dolor sit, amet consectetur adipisicing.
+                cite.footer__author Lorem, ipsum.
