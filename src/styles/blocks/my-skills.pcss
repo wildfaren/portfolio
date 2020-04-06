@@ -1,14 +1,22 @@
 .my-skills {
-    background: url('../images/background/skills-bg.png') center center/cover no-repeat;
+    background-image: url('../images/background/skills-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     min-height: 1020px;
+    padding: 7% 0;
 
     &::before {
         content: "";
-        background: url('../images/content/hands.png') no-repeat;
+        background: url('../images/content/hands.png') 0 100% / contain no-repeat;
         position: absolute;
-        width: 650px;
-        height: 970px;
-        bottom: -75px;
+        width: 40%;
+        height: 100%;
+        bottom: -9%;
+        left: 0;
     }
+}
+
+.my-skills__content {
+    padding-left: 30%;
 }

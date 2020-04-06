@@ -1,0 +1,22 @@
+.works-slider
+    .works-slider__display
+        .works-slider__content
+            .works-slider__pic
+                +image('slider/preview-big.png', 'works-slider__img')
+            .works-slider__buttons
+                button(type='button').works-slider__btn.works-slider__btn-next
+                button(type='button').works-slider__btn.works-slider__btn-prev
+            ul.works-slider__previews
+                li.works-slider__previews__item
+                    a(href='#').works-slider__previews-link
+                        +image('slider/preview-big.png', 'works-slider__previews-img')
+    .works-slider__desc
+        ul.works-slider__tags
+            - var tags = ['HTML', 'CSS', 'JavaScript']
+                each tag in tags
+                    li.works-slider__tag-item= tag
+        .works-slider__title Сайт школы образования
+        .works-slider__text
+            p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+        a(href='#').works-slider__link Посмотреть сайт
+            +icon('link', 'works-slider__link-icon')
