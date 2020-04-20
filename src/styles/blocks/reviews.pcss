@@ -1,0 +1,134 @@
+.reviews {
+    display: flex;
+    margin-bottom: 200px;
+    position: relative;
+    z-index: 5;
+}
+
+.reviews__header {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.reviews__title {
+    margin-right: 100px;
+    margin-bottom: 0;
+}
+
+.reviews__slider-controls {
+    display: flex;
+}
+
+.reviews__btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid $white;
+    border-radius: 50%;
+    background: transparent;
+    position: relative;
+    margin-right: 30px;
+
+    &:hover {
+        border-color: $orange;
+    }
+
+    &:hover:before {
+        background: svg-load('arrow-down.svg', fill=$orange) center center / contain no-repeat;
+    }
+
+    &:before {
+        content: "";
+        background: svg-load('arrow-down.svg', fill=$white) center center / contain no-repeat;
+        width: 8px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &-prev {
+        &:before {
+        transform: translate(-50%, -50%) rotate(-180deg);
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.reviews__btn--disabled {
+    border: 1px solid $grey;
+
+    &:hover:before {
+        background: svg-load('arrow-down.svg', fill=$grey) center center / contain no-repeat;
+    }
+
+    &:before {
+        background: svg-load('arrow-down.svg', fill=$grey) center center / contain no-repeat;
+    }
+
+    &:hover {
+        border: 1px solid $grey;
+    }
+}
+
+.reviews__slider {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 25px;
+}
+
+.reviews__item {
+    width: 30%;
+    padding-left: 85px;
+    position: relative;
+    margin-right: 75px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        opacity: .5;
+        top: 0;
+        left: 0;
+        width: 75px;
+        height: 63px;
+        background: svg-load('quote.svg', fill=$grey) center center / contain no-repeat;
+    }
+}
+
+.review__text {
+    font-weight: 600;
+    color: $text-color;
+    margin-bottom: 35px;
+}
+
+.review__user {
+    display: flex;
+    align-items: center;
+}
+
+.review__user-photo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.review__user-photo {
+    object-fit: cover;
+    object-position: top center;
+}
+
+.review__user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: $white;
+    margin-bottom: 18px;
+}
+
+.review__user-occ {
+    font-weight: 600;
+}

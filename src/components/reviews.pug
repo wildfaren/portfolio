@@ -1,11 +1,19 @@
 section.reviews
     .container
-        h4.reviews__title.section-title Что обо мне говорят
-        .reviews__slider-controls
-            button.review__btn.reviews__btn-prev(type='button')
-            button.review__btn.reviews__btn-next(type='button')
+        .reviews__header
+            h4.reviews__title.section-title Что обо мне говорят
+            .reviews__slider-controls
+                button.reviews__btn.reviews__btn-prev(type='button')
+                button.reviews__btn.reviews__btn-next(type='button')
         ul.reviews__slider
             - for (var i = 0; i < 2; i++)
                 li.reviews__item
-                    .text
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, incidunt?
+                    .text.review__text
+                        p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .review__user
+                        .review__user-photo
+                            +image('content/feedback-user-2.png', 'review__user-photo')
+                        .review__user-desc
+                            h5.review__user-name Дмитрий Ковальчук
+                            .review__user-occ Основатель LoftSchool
+                    

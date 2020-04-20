@@ -1,0 +1,14 @@
+form.form
+    label.form__block
+        .form__label-text Enter your name
+        +icon('user', 'form__icon')
+        input.form__input(type='text' name='name' placeholder='Дмитрий Ковальчук')
+    label.form__block
+        .form__label-text Enter your email
+        +icon('envelope', 'form__icon')
+        input.form__input(type='email' name='email' placeholder='your@email.com')
+    label.form__block.form__block-textarea
+        .form__label-text Enter your message
+        +icon('message', 'form__icon')
+        textarea.form__input.form__input-textarea(name='text' placeholder='Say me what your want from me')
+    button.btn(type='submit') Отправить
