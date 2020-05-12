@@ -4,6 +4,10 @@
     grid-auto-flow: row;
     grid-gap: 40px;
     width: 60%;
+
+    @include desktop {
+        width: 75%;
+    }
 }
 
 .form__block {
@@ -39,11 +43,10 @@
     padding: 0 0 20px 40px;
     color: $white;
     font-weight: 700;
-    transition: color .3s;
     transition: border .3s;
 
     &::-webkit-input-placeholder {
-    color: $white;
+        color: $white;
     }
     &:focus::-webkit-input-placeholder {
         color: transparent;
@@ -66,8 +69,10 @@
     transition: fill .3s;
     position: absolute;
     top: 40px;
+    left: 0;
 }
 
-.form__input:focus .form__icon {
+.form__input:focus ~ .form__icon {
     fill: $orange;
+    opacity: 1;
 }

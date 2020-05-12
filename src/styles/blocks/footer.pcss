@@ -1,0 +1,83 @@
+.footer {
+    background: #1b1f22;
+    padding: 60px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    display: inline-flex;
+    width: 50%;
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+}
+
+.footer__year {
+    font-size: 48px;
+    font-weight: 600;
+    opacity: 0.1;
+    margin-right: 60px;
+}
+
+.footer__name {
+    font-weight: bold;
+    font-size: 18px;
+    color: $white;
+    padding-top: 10px;
+    margin-bottom: 35px;
+    width: 49%;
+    line-height: 1.67;
+
+    @include desktop {
+        margin-bottom: 15px;
+        width: 30%;
+    }
+}
+
+.footer__desc {
+    font-weight: normal;
+    opacity: .15;
+    width: 60%;
+    line-height: 1.88;
+}
+
+.footer__blocks {
+    display: flex;
+}
+
+.footer__block-socials {
+    width: 80%;
+}
+
+.footer__text {
+    font-weight: normal;
+    opacity: .5;
+    margin-bottom: 25px;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__block-quote {
+    width: 70%;
+}
+
+.footer__quote-text {
+    font-weight: normal;
+    opacity: .5;
+    margin-bottom: 30px;
+}
+
+.footer__author {
+    color: $white;
+    font-style: italic;
+}

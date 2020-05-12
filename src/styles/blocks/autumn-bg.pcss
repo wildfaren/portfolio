@@ -1,8 +1,8 @@
 .maincontent__autumn-bg {
-    background-image: url('../images/background/feedback-bg.png');
+    background: url('../images/background/feedback-bg.png') center center / cover no-repeat;
     position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: contain; */
     min-height: 1020px;
     padding: 7% 0;
 
@@ -15,6 +15,12 @@
         height: 1400px;
         background-image: url(‘~images/content/leafs.png);
         background-repeat: no-repeat;
+
+        @include desktop {
+            background-size: 100%;
+            top: -130px;
+            width: 40%;
+        }
     }
 
     &:before {

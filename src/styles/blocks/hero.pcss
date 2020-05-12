@@ -22,7 +22,7 @@
 .hero__about {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 40%;
     align-items: center;
     z-index: 5;
 }
@@ -30,10 +30,15 @@
 .hero__content {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 37%;
     height: 40%;
     align-items: center;
     z-index: 5;
+
+    @include desktop {
+        height: 35%;
+        width: 43%;
+    }
 }
 
 .hero__photo {
@@ -76,9 +81,15 @@
 
 .hero__text {
     margin-bottom: 110px;
+    line-height: 1.88;
+
+    @include desktop {
+        margin-bottom: 100px;
+    }
 }
 
 .hero__cite {
-    font-weight: 600;
+    font-weight: normal;
+    line-height: 1.88;
     font-style: italic;
 }

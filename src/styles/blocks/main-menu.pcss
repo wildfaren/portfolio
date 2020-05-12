@@ -1,7 +1,6 @@
-.main-menu {
+.main-menu--header {
     display: flex;
     justify-content: center;
-    width: 50%;
 }
 
 .main-menu__list {
@@ -17,5 +16,16 @@
     &:hover {
         color: $orange;
         transition: color .3s;
+    }
+}
+
+.footer .main-menu {
+    color: $white;
+    padding-top: 10px;
+    height: 30px;
+    margin-bottom: 70px;
+
+    & .main-menu__item:first-child {
+        margin-left: 0;
     }
 }

@@ -22,6 +22,12 @@
         margin-left: -8%;
         color: rgba(#000000, 0.05);
     }
+
+    @include desktop {
+        width: 63%;
+        height: 430px;
+    }
+
     @include phones {
         width: 100%;
         margin-bottom: 60px;
@@ -61,6 +67,10 @@
     bottom: 60px;
     height: 100px;
     width: 178px;
+
+    @include desktop {
+        height: 70px;
+    }
 }
 
 .works-slider__previews-item {
@@ -86,6 +96,10 @@
     position: absolute;
     bottom: 60px;
     left: 100%;
+
+    @include desktop {
+        bottom: 30px;
+    }
 }
 
 .works-slider__btn {

@@ -1,14 +1,14 @@
 form.form
     label.form__block
-        .form__label-text Enter your name
-        +icon('user', 'form__icon')
+        .form__label-text Введите ваше имя
         input.form__input(type='text' name='name' placeholder='Дмитрий Ковальчук')
+        +icon('user', 'form__icon')
     label.form__block
-        .form__label-text Enter your email
-        +icon('envelope', 'form__icon')
+        .form__label-text Введите ваш email
         input.form__input(type='email' name='email' placeholder='your@email.com')
+        +icon('envelope', 'form__icon')
     label.form__block.form__block-textarea
-        .form__label-text Enter your message
-        +icon('message', 'form__icon')
+        .form__label-text Сообщение к письму
         textarea.form__input.form__input-textarea(name='text' placeholder='Say me what your want from me')
+        +icon('message', 'form__icon')
     button.btn(type='submit') Отправить
