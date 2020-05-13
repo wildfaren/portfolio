@@ -6,6 +6,7 @@
   "bp-tablets": "768px",
   "bp-phones": "480px",
   "white": "#ffffff",
+  "black": "#000",
   "grey": "#7f7970",
   "dark-grey": "#36393c",
   "orange": "#ed8200",

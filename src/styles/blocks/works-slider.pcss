@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .works-slider__display {
@@ -26,6 +30,11 @@
     @include desktop {
         width: 63%;
         height: 430px;
+    }
+
+    @include tablets {
+        width: 85%;
+        margin-bottom: 50px;
     }
 
     @include phones {
@@ -147,6 +156,15 @@
     color: #000;
     width: 24%;
 
+    @include tablets {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     @include phones {
         padding: 0 5%;
         text-align: left;
@@ -157,6 +175,10 @@
 .works-slider__tags {
     display: flex;
     margin-bottom: 60px;
+
+    @include tablets {
+        margin-bottom: 20px;
+    }
 }
 
 .works-slider__tag-item {
@@ -177,10 +199,19 @@
     font-size: 30px;
     color: $dark-blue;
     margin-bottom: 70px;
+
+    @include tablets {
+        margin-bottom: 20px;
+    }
 }
 
 .works-slider__text {
     margin-bottom: 70px;
+
+    @include tablets {
+        width: 60%;
+        margin-bottom: 20px;
+    }
 }
 
 .works-slider__link {

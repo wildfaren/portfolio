@@ -1,5 +1,9 @@
 .skills {
     margin-left: 12%;
+
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .skills__row {
@@ -21,4 +25,8 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -4%;
+
+    @include tablets {
+        justify-content: center;
+    }
 }

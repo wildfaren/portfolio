@@ -14,11 +14,28 @@
         height: 100%;
         bottom: -9%;
         left: 0;
+
+        @include tablets {
+            bottom: -390px;
+            transform: rotate(-90deg);
+            left: -60px;
+            width: 45%;
+        }
     }
 }
 
 .my-skills__content {
     padding-left: 35%;
+
+    @include tablets {
+        padding-left: 0;
+        padding-bottom: 350px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .my-skills__title {
@@ -29,4 +46,15 @@
 .my-skills__text {
     margin-bottom: 100px;
     max-width: 600px;
+
+    @include tablets {
+        max-width: 500px;
+        margin-bottom: 70px;
+    }
+}
+
+.my-skills__widget {
+    @include tablets {
+        width: 100%;
+    }
 }

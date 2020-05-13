@@ -1,0 +1,65 @@
+.burger {
+    display: none;
+    position: relative;
+    z-index: 35;
+    width: 28px;
+    height: 4px;
+    background-color: $white;
+    transition: transform 0.5s;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $white;
+        transition: opacity 0.4s 1s;
+            
+        @include phones {
+            bottom: 9px;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $white;
+        transition: transform 0.4s;
+        
+        @include phones {
+            top: 9px;
+        }
+    }
+
+    @include tablets {
+        display: flex;
+    }
+}
+
+.burger--active {
+    z-index: 35;
+    background-color: $black;
+    transform: rotate(45deg);
+    transition: transform 0.4s;
+
+    &::before {
+        opacity: 0;
+    }
+
+    &::after {
+        z-index: 20;
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $black;
+        transform: rotate(-90deg);
+        transition: transform 0.4s;
+    }
+}

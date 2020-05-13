@@ -96,10 +96,20 @@
         width: 75px;
         height: 63px;
         background: svg-load('quote.svg', fill=$grey) center center / contain no-repeat;
+
+        @include tablets {
+            width: 25px;
+            height: 30px;
+        }
     }
 
     @include desktop {
         width: 35%;
+    }
+
+    @include tablets {
+        padding-left: 28px;
+        width: 50%;
     }
 }
 
