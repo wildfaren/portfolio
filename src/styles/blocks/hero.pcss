@@ -17,6 +17,10 @@
     align-items: center;
     height: 100vh;
     justify-content: center;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .hero__about {
@@ -25,6 +29,10 @@
     width: 40%;
     align-items: center;
     z-index: 5;
+
+    @include phones {
+        width: 80%;
+    }
 }
 
 .hero__content {
@@ -39,12 +47,20 @@
         height: 35%;
         width: 43%;
     }
+
+    @include phones {
+        width: 80%;
+    }
 }
 
 .hero__photo {
     width: 200px;
     height: 200px;
     margin-bottom: 65px;
+
+    @include phones {
+        margin-bottom: 20px;
+    }
 }
 
 .hero__photo-img {

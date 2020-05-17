@@ -6,6 +6,10 @@
 .footer__container {
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .footer__copyright {
@@ -17,6 +21,10 @@
         flex-direction: column;
         width: 40%;
     }
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .footer__year {
@@ -24,6 +32,10 @@
     font-weight: 600;
     opacity: 0.1;
     margin-right: 60px;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .footer__name {
@@ -39,6 +51,11 @@
         margin-bottom: 15px;
         width: 30%;
     }
+
+    @include phones {
+        width: 100%;
+        margin-bottom: 5px;
+    }
 }
 
 .footer__desc {
@@ -46,14 +63,26 @@
     opacity: .15;
     width: 60%;
     line-height: 1.88;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .footer__blocks {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .footer__block-socials {
     width: 80%;
+
+    @include phones {
+        margin-bottom: 20px;
+    }
 }
 
 .footer__text {

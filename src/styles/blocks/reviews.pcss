@@ -9,11 +9,22 @@
     display: flex;
     margin-bottom: 100px;
     align-items: center;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .reviews__title {
     margin-right: 100px;
     margin-bottom: 0;
+
+    @include phones {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
 }
 
 .reviews__slider-controls {
@@ -56,6 +67,12 @@
     }
     &:focus {
         outline: none;
+    }
+
+    @include phones {
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 

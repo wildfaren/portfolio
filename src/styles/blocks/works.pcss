@@ -4,9 +4,19 @@
     @include tablets {
         padding: 170px 0;
     }
+
+    @include phones {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .works__title {
     color: $dark-blue;
     margin-bottom: 80px;
+
+    @include phones {
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }

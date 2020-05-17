@@ -12,14 +12,27 @@
     @include tablets {
         width: 100%;
     }
+
+    @include phones {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+    }
 }
 
 .form__block {
     position: relative;
+
+    @include phones {
+        grid-column: 1;
+    }
 }
 
 .form__block-textarea {
     grid-column: span 2;
+
+    @include phones {
+        grid-column: 1;
+    }
 }
 
 .btn {
@@ -30,6 +43,10 @@
     background-color: $orange;
     font-size: 18px;
     font-weight: 700;
+
+    @include phones {
+        width: 90%;
+    }
 }
 
 .form__label-text {

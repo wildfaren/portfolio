@@ -21,6 +21,12 @@
             left: -60px;
             width: 45%;
         }
+
+        @include phones {
+            width: 70%;
+            bottom: -549px;
+            left: -415px;
+        }
     }
 }
 
@@ -41,6 +47,10 @@
 .my-skills__title {
     margin-bottom: 60px;
     font-size: 30px;
+
+    @include phones {
+        text-align: left;
+    }
 }
 
 .my-skills__text {
@@ -50,6 +60,10 @@
     @include tablets {
         max-width: 500px;
         margin-bottom: 70px;
+    }
+
+    @include phones {
+        text-align: left;
     }
 }
 

@@ -28,4 +28,23 @@
     & .main-menu__item:first-child {
         margin-left: 0;
     }
+
+    @include phones {
+        margin-bottom: 100px;
+    }
+}
+
+.footer .main-menu__list {
+    @include phones {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.footer .main-menu__item {
+    @include phones {
+        margin-left: 0;
+        width: calc(50% - 40px);
+        margin-bottom: 20px;
+    }
 }
